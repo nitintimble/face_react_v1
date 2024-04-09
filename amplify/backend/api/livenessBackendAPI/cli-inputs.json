@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/liveness/create": {
+      "name": "/liveness/create",
+      "lambdaFunction": "createSession",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/liveness/{sessionId}": {
+      "name": "/liveness/{sessionId}",
+      "lambdaFunction": "getResults",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

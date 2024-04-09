@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactliveness-dev-99e90-authRole",
+      "UnauthRoleArn": "arn:aws:iam::370655258491:role/amplify-reactliveness-dev-99e90-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::370655258491:role/amplify-reactliveness-dev-99e90-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactliveness-dev-99e90-deployment",
+      "UnauthRoleName": "amplify-reactliveness-dev-99e90-unauthRole",
+      "StackName": "amplify-reactliveness-dev-99e90",
+      "StackId": "arn:aws:cloudformation:us-east-1:370655258491:stack/amplify-reactliveness-dev-99e90/c2203640-f633-11ee-ab54-1220905aee2f",
+      "AmplifyAppId": "d1cqzh60oi7h0m"
+    },
+    "categories": {
+      "function": {
+        "createSession": {
+          "deploymentBucketName": "amplify-reactliveness-dev-99e90-deployment",
+          "s3Key": "amplify-builds/createSession-334c3063597870457968-build.zip"
+        },
+        "getResults": {
+          "deploymentBucketName": "amplify-reactliveness-dev-99e90-deployment",
+          "s3Key": "amplify-builds/getResults-6a5a4659767a38565941-build.zip"
+        }
+      },
+      "api": {
+        "livenessBackendAPI": {}
+      }
+    }
+  }
+}

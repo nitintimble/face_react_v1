@@ -1,0 +1,72 @@
+{
+  "api": {
+    "livenessBackendAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "createSession"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getResults"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "createSession": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getResults": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_createSession_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createSession"
+        }
+      ]
+    },
+    "AMPLIFY_function_createSession_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createSession"
+        }
+      ]
+    },
+    "AMPLIFY_function_getResults_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getResults"
+        }
+      ]
+    },
+    "AMPLIFY_function_getResults_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getResults"
+        }
+      ]
+    }
+  }
+}
